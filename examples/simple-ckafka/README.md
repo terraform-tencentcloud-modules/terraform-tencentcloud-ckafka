@@ -16,10 +16,10 @@ Note, this example may create resources which cost money. Run `terraform destroy
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| ckafka_instance_id   | Ckafka instance id.  |
-| ckafka_vip | Vip of instance. |
-| ckafka_vport | Type of instance. |
-| vpc_id | Vpc id. |
-| subnet_id | Subnet id. |
+| Name               | Description         |
+|--------------------|---------------------|
+| ckafka_instance_id | Ckafka instance id. |
+| ckafka_vip         | Vip of instance.    |
+| ckafka_vport       | Type of instance.   |
+| vpc_id             | Vpc id.             |
+| subnet_id          | Subnet id.          |
