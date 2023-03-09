@@ -6,7 +6,7 @@ module "vpc" {
 
   subnet_name  = "simple-vpc-grezs-test"
   subnet_cidrs = ["10.0.0.0/24"]
-  availability_zones = ["ap-guangzhou-3"]
+  availability_zones = ["ap-singapore-1"]
 
   destination_cidrs = ["1.0.1.0/24"]
   next_type         = ["EIP"]
@@ -28,16 +28,17 @@ module "vpc" {
 module "ckafka" {
   source = "../../"
 
-  instance_name        = "tf-ckafka-grezs"
+  instance_name        = "tf-ckafka-grezs——andy"
+  instance_type        = 1
   kafka_version        = "2.4.1"
   band_width           = 40
-  disk_size            = 500
+  disk_size            = 600
   disk_type            = "CLOUD_BASIC"
   period               = 1
-  msg_retention_time   = 1300
+  msg_retention_time   = 1500
   partition            = 800
   renew_flag           = 0
-  zone_id              = 100003
+  zone_id              = 900001
   vpc_id               = "${module.vpc.vpc_id}"
   subnet_id            = "${module.vpc.subnet_id[0]}"
   

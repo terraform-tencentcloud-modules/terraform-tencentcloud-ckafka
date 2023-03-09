@@ -23,6 +23,11 @@ variable period {
   default     = 1
   description = "Prepaid purchase time, such as 1, is one month."
 }
+variable instance_type {
+  type        = number
+  default     = 1
+  description = "Description of instance type. profession: 1, standard: 1(general), 2(standard), 3(advanced), 4(capacity), 5(specialized-1), 6(specialized-2), 7(specialized-3), 8(specialized-4), 9(exclusive)."
+}
 variable kafka_version {
   type        = string
   default     = "2.4.1"
