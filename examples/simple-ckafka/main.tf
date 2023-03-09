@@ -32,10 +32,10 @@ module "ckafka" {
   instance_type        = 1
   kafka_version        = "2.4.1"
   band_width           = 40
-  disk_size            = 600
+  disk_size            = 500
   disk_type            = "CLOUD_BASIC"
   period               = 1
-  msg_retention_time   = 1500
+  msg_retention_time   = 1300
   partition            = 800
   renew_flag           = 0
   zone_id              = 900001
